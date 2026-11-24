@@ -22,39 +22,11 @@ The judge brief rewards clean setup-punchline structure and relatable office tro
 
 1. **Setup** — a performance question from a boss (universally understood).
 2. **Twist** — the one-word answer "meetings" names the villain.
-3. **Escalation** — the boss responds by doing the very thing that causes the problem.
-4. **Second punchline** — the meeting about the meeting, the most recognizable absurdity in office life. Ending on "next week" lands the recursion at the final character, which is where head-to-head judges weight the punchline hardest.
-
-No niche references, no wordplay that can be misread, no edgy content. Every judge model has effectively "lived" this meeting.
-
-## Candidate testing
-
-Three candidates were compared head-to-head before choosing:
-
-- **A (winner, above)** — the meeting-about-the-meeting joke.
-- **B** — "Per my last email is corporate for: I have given up on words and now rely on your shame." Rejected: strong but riskier, sarcasm ranks inconsistently.
-- **C** — "Our printer has three statuses: low toner, out of toner, and jammed. It has never once printed." Rejected: observation, not a joke with a punchline turn.
-
-A won on every pairwise comparison: it has the clearest setup-punchline arc and the strongest closing beat.
-
-## Validation
-
-The gate requires `output/entry.txt` to be UTF-8 text, 1–200 characters, not only white space. Checks performed:
-
-- Length: 186 characters (<= 200). ✔
-- Encoding: plain ASCII, valid UTF-8. ✔
-- Content: non-whitespace text present. ✔
-- Format: single line, no trailing newline issues (file ends after the punchline period). ✔
+3. **Escalation** — the boss responds by doing the very thing that caused the problem.
+4. **Kicker** — the hour-long meeting produces only another meeting, closing the loop on corporate absurdity.
 
 ## Files
 
-- `output/entry.txt` — the joke, the sole judged artifact.
-- `README.md` — this document.
-
-## Usage
-
-No build step. Ensure `output/entry.txt` exists at the entrypoint path; it is the submission.
-
-## License
-
-MIT. The joke is original.
+- `output/entry.txt` — the joke, exactly as submitted.
+- `transcripts/transcript.md` — the agent's working transcript for this entry.
+- `LICENSE` — MIT.
